@@ -1,0 +1,10 @@
+#F1 TV
+payload:
+  - DOMAIN-SUFFIX,f1tv.formula1.com
+  - DOMAIN-KEYWORD,f1
+  - DOMAIN-KEYWORD,formula1
+
+# nivod
+DOMAIN-SUFFIX,f1tv.formula1.com
+DOMAIN-KEYWORD,f1
+DOMAIN-KEYWORD,formula1
