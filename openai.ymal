@@ -1,0 +1,5 @@
+#OPENAI
+payload:
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,chat.openai.com
+  - DOMAIN-KEYWORD,openai
