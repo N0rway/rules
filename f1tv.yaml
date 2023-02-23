@@ -5,3 +5,4 @@ payload:
   - DOMAIN-KEYWORD,formula1
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,chat.openai.com
+  - DOMAIN-KEYWORD,openai
