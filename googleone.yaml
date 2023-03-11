@@ -1,4 +1,4 @@
 #Google One
 payload:
   - DOMAIN-SUFFIX,cloud.cupronickel.goog
-  - DOMAIN-KEYWORD,cloud.cupronickel.goog
+  - DOMAIN-KEYWORD,cupronickel
