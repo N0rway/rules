@@ -1,0 +1,4 @@
+#浏览器自动验证码拓展nopecha解除ip封禁
+DOMAIN,api.nopecha.com
+#DeepL直连翻译
+DOMAIN,www2.deepl.com
