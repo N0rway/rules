@@ -1,0 +1,4 @@
+#谷歌大陆节点代理
+DOMAIN-SUFFIX,gstatic.com
+#谷歌play
+DOMAIN-SUFFIX,googleapis.cn
