@@ -1,8 +1,5 @@
 #nivod
 payload:
-  - DOMAIN-SUFFIX,www.nivod.tv
-  - DOMAIN-SUFFIX,biggggg.com
-  - DOMAIN-SUFFIX,newpppp.com
   - DOMAIN-KEYWORD,mudvod
   - DOMAIN-KEYWORD,nivod
 
