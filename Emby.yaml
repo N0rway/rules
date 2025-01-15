@@ -8,6 +8,10 @@ payload:
   - DOMAIN-KEYWORD,hka
   - DOMAIN-KEYWORD,imetyou
   - DOMAIN-SUFFIX,acemby.org
+  - DOMAIN-KEYWORD,zox
+  - DOMAIN-SUFFIX,zox.show
+
+
 
 
 
