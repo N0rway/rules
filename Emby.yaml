@@ -4,9 +4,7 @@ payload:
 #  - PROCESS-NAME,electron.exe
   - DOMAIN-KEYWORD,emby
   - DOMAIN-KEYWORD,acemby
-  - DOMAIN-KEYWORD,misakaf
   - DOMAIN-KEYWORD,hka
-  - DOMAIN-KEYWORD,imetyou
   - DOMAIN-SUFFIX,acemby.org
   - DOMAIN-KEYWORD,zox
   - DOMAIN-SUFFIX,zox.show
