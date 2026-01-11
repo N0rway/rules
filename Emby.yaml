@@ -4,8 +4,9 @@ payload:
 #  - PROCESS-NAME,electron.exe
   - DOMAIN-KEYWORD,emby
   - DOMAIN-KEYWORD,hka
-  - DOMAIN-SUFFIX,acemby.org
   - DOMAIN-KEYWORD,uhd
+  - DOMAIN-KEYWORD,smlw
+  - DOMAIN-KEYWORD,cn2gias
   - DOMAIN-SUFFIX,3767483.xyz
 
 
