@@ -16,81 +16,65 @@ proxy-providers:
       udp: true
 
 proxy-groups:
-  - name: "🚀 手动选择"
+  - name: "🚀 节点选择"
     type: select
     url: "https://cp.cloudflare.com/generate_204"
     interval: 300
     proxies:
-    - "♻️ 自动选择"
+    - "🚁 Oracle"
+    - "🚀 手动切换1"
+    - "🚀 手动切换2"
     - "🇭🇰 香港节点"
     - "🇺🇸 美国节点"
     - "🇯🇵 日本节点"
     - "🇸🇬 新加坡节点"
     - "🇼🇸 台湾节点"
-    - "🇰🇷 韩国节点"
-    - "🇨🇦 加拿大节点"
-    - "🇬🇧 英国节点"
-    - "🇫🇷 法国节点"
-    - "🇩🇪 德国节点"
-    - "🇳🇱 荷兰节点"
-    - "🇹🇷 土耳其节点"
     - "🌐 其他地区"
     filter: "^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB|Expire)).*$"
     use:
       - provider
+
+  - name: "🚁 Oracle"
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    filter: "(?i)(oracle)"
+    use:
+      - provider
+    interval: 300
+    tolerance: 50
+
+  - name: "🚀 手动切换1"
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    filter: "^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB|Expire)).*$"
+    use:
+      - provider
+    interval: 300
+    tolerance: 50
+
+  - name: "🚀 手动切换2"
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    filter: "^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB|Expire)).*$"
+    use:
+      - provider
+    interval: 300
+    tolerance: 50
+
 
     
-  - name: "♻️ 自动选择"
-    type: url-test
-    filter: "^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB|Expire)).*$"
-    tolerance: 50
-    url: "https://cp.cloudflare.com/generate_204"
-    interval: 300
-    use:
-      - provider
-
-  - name: "💬 即时通讯"
+  - name: "💬 国外通讯"
     type: select
     proxies:
-    - "♻️ 自动选择"
+    - "🚁 Oracle"
+    - "🚀 手动切换1"
+    - "🚀 手动切换2"
     - "🇭🇰 香港节点"
     - "🇺🇸 美国节点"
     - "🇯🇵 日本节点"
     - "🇸🇬 新加坡节点"
     - "🇼🇸 台湾节点"
-    - "🇰🇷 韩国节点"
-    - "🇨🇦 加拿大节点"
-    - "🇬🇧 英国节点"
-    - "🇫🇷 法国节点"
-    - "🇩🇪 德国节点"
-    - "🇳🇱 荷兰节点"
-    - "🇹🇷 土耳其节点"
     - "🌐 其他地区"
-    - "🚀 手动选择"
-    - "🎯 全球直连"
-
-  - name: "🌐 社交媒体"
-    type: select
-    proxies:
-    - "🇭🇰 香港节点"
-    - "🇺🇸 美国节点"
-    - "🇯🇵 日本节点"
-    - "🇸🇬 新加坡节点"
-    - "🇼🇸 台湾节点"
-    - "🇰🇷 韩国节点"
-    - "🇨🇦 加拿大节点"
-    - "🇬🇧 英国节点"
-    - "🇫🇷 法国节点"
-    - "🇩🇪 德国节点"
-    - "🇳🇱 荷兰节点"
-    - "🇹🇷 土耳其节点"
-    - "🌐 其他地区"
-    - "🚀 手动选择"
-    - "♻️ 自动选择"
-    - "🎯 全球直连"
-    filter: "^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB|Expire)).*$"
-    use:
-      - provider
 
   - name: "🚀 GitHub"
     type: select
@@ -565,47 +549,18 @@ proxy-groups:
     use:
       - provider
 
-  - name: "🚀 测速工具"
-    type: select
-    proxies:
-    - "🎯 全球直连"
-    - "🇭🇰 香港节点"
-    - "🇺🇸 美国节点"
-    - "🇯🇵 日本节点"
-    - "🇸🇬 新加坡节点"
-    - "🇼🇸 台湾节点"
-    - "🇰🇷 韩国节点"
-    - "🇨🇦 加拿大节点"
-    - "🇬🇧 英国节点"
-    - "🇫🇷 法国节点"
-    - "🇩🇪 德国节点"
-    - "🇳🇱 荷兰节点"
-    - "🇹🇷 土耳其节点"
-    - "🌐 其他地区"
-    - "🚀 手动选择"
-    - "♻️ 自动选择"
-    filter: "^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB|Expire)).*$"
-    use:
-      - provider
-
   - name: "🐟 漏网之鱼"
     type: select
     proxies:
+    - "🚁 Oracle"
+    - "🚀 手动切换1"
+    - "🚀 手动切换2"
     - "🇭🇰 香港节点"
     - "🇺🇸 美国节点"
     - "🇯🇵 日本节点"
     - "🇸🇬 新加坡节点"
     - "🇼🇸 台湾节点"
-    - "🇰🇷 韩国节点"
-    - "🇨🇦 加拿大节点"
-    - "🇬🇧 英国节点"
-    - "🇫🇷 法国节点"
-    - "🇩🇪 德国节点"
-    - "🇳🇱 荷兰节点"
-    - "🇹🇷 土耳其节点"
     - "🌐 其他地区"
-    - "🚀 手动选择"
-    - "♻️ 自动选择"
     - "🎯 全球直连"
     filter: "^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB|Expire)).*$"
     use:
@@ -662,73 +617,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
 
-  - name: "🇰🇷 韩国节点"
-    type: url-test
-    url: https://www.gstatic.com/generate_204
-    filter: "(?i)(KR|Korea|KOR|首尔|韩|韓|🇰🇷)"
-    use:
-      - provider
-    interval: 300
-    tolerance: 50
-
-  - name: "🇨🇦 加拿大节点"
-    type: url-test
-    url: https://www.gstatic.com/generate_204
-    filter: "(?i)(加拿大|Canada|渥太华|温哥华|卡尔加里|🇨🇦)"
-    use:
-      - provider
-    interval: 300
-    tolerance: 50
-
-  - name: "🇬🇧 英国节点"
-    type: url-test
-    url: https://www.gstatic.com/generate_204
-    filter: "(?i)(英国|Britain|United Kingdom|England|伦敦|🇬🇧)"
-    use:
-      - provider
-    interval: 300
-    tolerance: 50
-
-  - name: "🇫🇷 法国节点"
-    type: url-test
-    url: https://www.gstatic.com/generate_204
-    filter: "(?i)(法国|France|巴黎|🇫🇷)"
-    use:
-      - provider
-    interval: 300
-    tolerance: 50
-
-  - name: "🇩🇪 德国节点"
-    type: url-test
-    url: https://www.gstatic.com/generate_204
-    filter: "(?i)(德国|Germany|柏林|法兰克福|🇩🇪)"
-    use:
-      - provider
-    interval: 300
-    tolerance: 50
-
-  - name: "🇳🇱 荷兰节点"
-    type: url-test
-    url: https://www.gstatic.com/generate_204
-    filter: "(?i)(荷兰|Netherlands|阿姆斯特丹|🇳🇱)"
-    use:
-      - provider
-    interval: 300
-    tolerance: 50
-
-  - name: "🇹🇷 土耳其节点"
-    type: url-test
-    url: https://www.gstatic.com/generate_204
-    filter: "(?i)(土耳其|Turkey|Türkiye|🇹🇷)"
-    use:
-      - provider
-    interval: 300
-    tolerance: 50
-
   - name: "🌐 其他地区"
     type: url-test
     url: https://www.gstatic.com/generate_204
-    filter: "^(?!.*(港|HK|hk|Hong Kong|HongKong|hongkong|深港|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|JP|Japan|🇯🇵|新加坡|坡|狮城|SG|Singapore|台|新北|彰化|TW|Taiwan|KR|Korea|KOR|首尔|韩|韓|加拿大|Canada|渥太华|温哥华|卡尔加里|英国|Britain|United Kingdom|England|伦敦|法国|France|巴黎|德国|Germany|柏林|法兰克福|荷兰|Netherlands|阿姆斯特丹|土耳其|Turkey|Türkiye|DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB)).*$"
+    filter: "^(?!.*(港|HK|hk|Hong Kong|HongKong|hongkong|深港|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|JP|Japan|🇯🇵|新加坡|坡|狮城|SG|Singapore|台|新北|彰化|TW|Taiwan|DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB)).*$"
     use:
       - provider
     interval: 300
@@ -756,13 +648,12 @@ rules:
 - "RULE-SET,Steam_CDN,🎯 全球直连"
 - "GEOSITE,category-game-platforms-download,🎯 全球直连"
 - "GEOSITE,category-public-tracker,🎯 全球直连"
-- "GEOSITE,category-communication,💬 即时通讯"
-- "GEOSITE,category-social-media-!cn,🌐 社交媒体"
+- "GEOSITE,category-communication,💬 国外通讯"
+- "GEOSITE,category-social-media-!cn,💬 国外通讯"
 - "GEOSITE,openai,🤖 ChatGPT"
 - "GEOSITE,bing,🤖 Copilot"
 - "GEOSITE,category-ai-!cn,🤖 AI服务"
 - "GEOSITE,github,🚀 GitHub"
-- "GEOSITE,category-speedtest,🚀 测速工具"
 - "GEOSITE,steam,🎮 Steam"
 - "GEOSITE,youtube,📹 YouTube"
 - "GEOSITE,apple-tvplus,🎥 AppleTV+"
@@ -776,15 +667,16 @@ rules:
 - "GEOSITE,hbo,🎥 HBO"
 - "GEOSITE,primevideo,🎥 PrimeVideo"
 - "GEOSITE,category-emby,🎥 Emby"
+- "RULE-SET,Emby,🎥 Emby"
 - "GEOSITE,spotify,🎻 Spotify"
 - "GEOSITE,bahamut,📺 Bahamut"
 - "GEOSITE,category-games,🎮 游戏平台"
 - "GEOSITE,category-entertainment,🌎 国外媒体"
 - "GEOSITE,category-ecommerce,🛒 国外电商"
-- "GEOSITE,gfw,🚀 手动选择"
+- "GEOSITE,gfw,🚀 节点选择"
 - "GEOIP,telegram,💬 即时通讯,no-resolve"
-- "GEOIP,twitter,🌐 社交媒体,no-resolve"
-- "GEOIP,facebook,🌐 社交媒体,no-resolve"
+- "GEOIP,twitter,💬 国外通讯,no-resolve"
+- "GEOIP,facebook,💬 国外通讯,no-resolve"
 - "GEOIP,google,🇬 谷歌服务,no-resolve"
 - "GEOIP,netflix,🎥 Netflix,no-resolve"
 - "GEOSITE,cn,🎯 全球直连"
@@ -825,3 +717,11 @@ rule-providers:
     type: http
     url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/Steam_CDN_Classical.yaml"
     proxy: DIRECT
+
+  Emby:
+    behavior: classical
+    interval: 10800
+    path: ./rule_provider/Emby.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/N0rway/rules/refs/heads/main/Emby.yaml"
+    proxy: "🎥 Emby"
