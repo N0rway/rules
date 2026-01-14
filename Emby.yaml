@@ -4,6 +4,7 @@ payload:
 #  - PROCESS-NAME,electron.exe
   - DOMAIN-KEYWORD,emby
   - DOMAIN-KEYWORD,hka
+  - DOMAIN-KEYWORD,imetyou
   - DOMAIN-KEYWORD,uhd
   - DOMAIN-KEYWORD,smlw
   - DOMAIN-KEYWORD,cn2gias
