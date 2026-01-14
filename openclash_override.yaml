@@ -41,7 +41,6 @@ proxy-groups:
     use:
       - provider
     interval: 300
-    tolerance: 50
 
   - name: "🚀 手动切换1"
     type: url-test
@@ -50,7 +49,6 @@ proxy-groups:
     use:
       - provider
     interval: 300
-    tolerance: 50
 
   - name: "🚀 手动切换2"
     type: url-test
@@ -59,7 +57,6 @@ proxy-groups:
     use:
       - provider
     interval: 300
-    tolerance: 50
 
   - name: "📹 YouTube"
     type: select
@@ -493,7 +490,6 @@ proxy-groups:
     use:
       - provider
     interval: 300
-    tolerance: 50
 
   - name: "🇺🇸 美国节点"
     type: url-test
@@ -502,7 +498,6 @@ proxy-groups:
     use:
       - provider
     interval: 300
-    tolerance: 50
 
   - name: "🇯🇵 日本节点"
     type: url-test
@@ -538,7 +533,6 @@ proxy-groups:
     use:
       - provider
     interval: 300
-    tolerance: 50
 
   - name: "🎯 全球直连"
     type: select
