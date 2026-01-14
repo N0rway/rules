@@ -35,7 +35,7 @@ proxy-groups:
       - provider
 
   - name: "🚁 Oracle"
-    type: url-test
+    type: select
     url: https://www.gstatic.com/generate_204
     filter: "(?i)(oracle)"
     use:
@@ -43,20 +43,16 @@ proxy-groups:
     interval: 300
 
   - name: "🚀 手动切换1"
-    type: url-test
-    url: https://www.gstatic.com/generate_204
+    type: select
     filter: "^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB|Expire)).*$"
     use:
       - provider
-    interval: 300
 
   - name: "🚀 手动切换2"
-    type: url-test
-    url: https://www.gstatic.com/generate_204
+    type: select
     filter: "^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB|Expire)).*$"
     use:
       - provider
-    interval: 300
 
   - name: "📹 YouTube"
     type: select
@@ -484,7 +480,7 @@ proxy-groups:
     - "🎯 全球直连"
 
   - name: "🇭🇰 香港节点"
-    type: url-test
+    type: select
     url: https://www.gstatic.com/generate_204
     filter: "(?i)(港|HK|Hong Kong|HongKong|深港|🇭🇰)"
     use:
@@ -492,7 +488,7 @@ proxy-groups:
     interval: 300
 
   - name: "🇺🇸 美国节点"
-    type: url-test
+    type: select
     url: https://www.gstatic.com/generate_204
     filter: "(?i)(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|🇺🇸)"
     use:
@@ -527,7 +523,7 @@ proxy-groups:
     tolerance: 50
 
   - name: "🌐 其他地区"
-    type: url-test
+    type: select
     url: https://www.gstatic.com/generate_204
     filter: "^(?!.*(港|HK|hk|Hong Kong|HongKong|hongkong|深港|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|JP|Japan|🇯🇵|新加坡|坡|狮城|SG|Singapore|台|新北|彰化|TW|Taiwan|DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|GB)).*$"
     use:
