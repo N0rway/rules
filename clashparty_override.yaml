@@ -561,7 +561,7 @@ rule-providers:
     format: text
     type: http
   ViuTV:
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/ViuTV.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/ViuTV.list
     path: ./ruleset/ViuTV.list
     behavior: classical
     interval: 86400
