@@ -28,7 +28,7 @@ proxy-groups:
     include-all: true
     type: select
     
-  - name: 油管视频
+  - name: Youtube
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
     type: select
     proxies:
@@ -53,9 +53,8 @@ proxy-groups:
       - 狮城节点
       - 香港节点
       - 日本节点
-  
-  - name: Telegram
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+
+  - name: Emby
     type: select
     proxies:
       - 节点选择
@@ -66,6 +65,32 @@ proxy-groups:
       - 狮城节点
       - 香港节点
       - 日本节点
+
+  - name: Spotify
+    type: select
+    proxies:
+      - 节点选择
+      - Oracle
+      - 手动切换1
+      - 手动切换2
+      - DIRECT
+
+  - name: F1
+    type: select
+    proxies:
+      - 节点选择
+      - Oracle
+      - 手动切换1
+      - 手动切换2
+      - 美国节点
+      - 狮城节点
+      - 香港节点
+      - 日本节点
+
+  - name: ViuTV
+    type: select
+    proxies:
+      - 香港节点
       
   - name: AI
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
@@ -80,10 +105,6 @@ proxy-groups:
       - 香港节点
       - 日本节点
 
-  
-
-
-      
   - name: 国外媒体
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
     type: select
@@ -110,7 +131,20 @@ proxy-groups:
       - 狮城节点
       - 香港节点
       - 日本节点
-      
+
+  - name: Telegram
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+    type: select
+    proxies:
+      - 节点选择
+      - Oracle
+      - 手动切换1
+      - 手动切换2
+      - 美国节点
+      - 狮城节点
+      - 香港节点
+      - 日本节点
+
   - name: 谷歌FCM
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
@@ -187,13 +221,26 @@ proxy-groups:
     proxies:
       - DIRECT
       - 节点选择
+      - Oracle
+      - 手动切换1
+      - 手动切换2
       - 美国节点
-      - 香港节点
-      - 台湾节点
       - 狮城节点
+      - 香港节点
       - 日本节点
-      - 韩国节点
-      - 手动切换
+
+  - name: Paypal
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - Oracle
+      - 手动切换1
+      - 手动切换2
+      - 美国节点
+      - 狮城节点
+      - 香港节点
+      - 日本节点
       
   - name: 网易音乐
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
@@ -409,6 +456,20 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  F1:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/F1.list
+    path: ./ruleset/F1.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Spotify:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Spotify.list
+    path: ./ruleset/Spotify.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   OpenAi:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
     path: ./ruleset/OpenAi.list
@@ -419,6 +480,20 @@ rule-providers:
   AI:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
     path: ./ruleset/AI.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Paypal:
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.list
+    path: ./ruleset/Paypal.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Emby:
+    url: https://raw.githubusercontent.com/N0rway/rules/refs/heads/main/Emby20260114.list
+    path: ./ruleset/Emby.list
     behavior: classical
     interval: 86400
     format: text
@@ -475,6 +550,13 @@ rule-providers:
   Netflix:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
     path: ./ruleset/Netflix.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ViuTV:
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/ViuTV.list
+    path: ./ruleset/ViuTV.list
     behavior: classical
     interval: 86400
     format: text
@@ -556,16 +638,21 @@ rules:
   - "RULE-SET,Microsoft,微软服务"
   - "RULE-SET,Apple,苹果服务"
   - "RULE-SET,Telegram,Telegram"
+  - "RULE-SET,Paypal,Paypal"
   - "RULE-SET,OpenAi,AI"
   - "RULE-SET,AI,AI"
+  - "RULE-SET,ViuTV,ViuTV"
+  - "RULE-SET,Emby,Emby"
+  - "RULE-SET,F1,F1"
+  - "RULE-SET,Spotify,Spotify"
   - "RULE-SET,NetEaseMusic,网易音乐"
   - "RULE-SET,Epic,游戏平台"
   - "RULE-SET,Origin,游戏平台"
   - "RULE-SET,Sony,游戏平台"
   - "RULE-SET,Steam,游戏平台"
   - "RULE-SET,Nintendo,游戏平台"
-  - "RULE-SET,YouTube,油管视频"
-  - "RULE-SET,Netflix,奈飞视频"
+  - "RULE-SET,YouTube,Youtube"
+  - "RULE-SET,Netflix,Netflix"
   - "RULE-SET,Bahamut,巴哈姆特"
   - "RULE-SET,BilibiliHMT,哔哩哔哩"
   - "RULE-SET,Bilibili,哔哩哔哩"
