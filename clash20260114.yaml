@@ -14,6 +14,7 @@ proxy-groups:
       - DIRECT
 
   - name: Oracle
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/oracle.png
     include-all: true
     filter: Oracle|oracle
     type: select
@@ -55,6 +56,7 @@ proxy-groups:
       - 日本节点
 
   - name: Emby
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
     type: select
     proxies:
       - 节点选择
@@ -67,6 +69,7 @@ proxy-groups:
       - 日本节点
 
   - name: Spotify
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Spotify.png
     type: select
     proxies:
       - 节点选择
@@ -76,6 +79,7 @@ proxy-groups:
       - DIRECT
 
   - name: F1
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/FI.png
     type: select
     proxies:
       - 节点选择
@@ -88,6 +92,7 @@ proxy-groups:
       - 日本节点
 
   - name: ViuTV
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Viu.png
     type: select
     proxies:
       - 香港节点
@@ -230,6 +235,7 @@ proxy-groups:
       - 日本节点
 
   - name: Paypal
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/PayPal.png
     type: select
     proxies:
       - DIRECT
