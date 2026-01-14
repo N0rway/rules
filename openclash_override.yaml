@@ -365,8 +365,6 @@ proxy-groups:
     - "🇼🇸 台湾节点"
     - "🌐 其他地区"
     - "🎯 全球直连"
-    use:
-      - provider
 
   - name: "🐟 漏网之鱼"
     type: select
