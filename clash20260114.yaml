@@ -15,7 +15,7 @@ proxy-groups:
 
   - name: Oracle
     include-all: true
-    filter: Oracle
+    filter: Oracle|oracle
     type: select
   
   - name: 手动切换1
