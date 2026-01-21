@@ -448,7 +448,7 @@ proxy-groups:
       - "🐟 漏网之鱼"
 
 rules:
-- "IP-CIDR,192.168.123.116/32,🎯 全球直连,no-resolve"
+- "IP-CIDR,192.168.123.116/32,DIRECT,no-resolve"
 - "GEOSITE,private,🎯 全球直连"
 - "GEOIP,private,🎯 全球直连,no-resolve"
 - "RULE-SET,Custom_Direct,🎯 全球直连"
