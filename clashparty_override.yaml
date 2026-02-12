@@ -469,6 +469,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  F11:
+    url: https://raw.githubusercontent.com/N0rway/rules/refs/heads/main/F1.list
+    path: ./ruleset/F11.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   Spotify:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Spotify.list
     path: ./ruleset/Spotify.list
@@ -650,6 +657,7 @@ rules:
   - "RULE-SET,ViuTV,ViuTV"
   - "RULE-SET,Emby,Emby"
   - "RULE-SET,F1,F1"
+  - "RULE-SET,F11,F1"
   - "RULE-SET,Spotify,Spotify"
   - "RULE-SET,NetEaseMusic,网易音乐"
   - "RULE-SET,Epic,游戏平台"
