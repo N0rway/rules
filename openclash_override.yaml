@@ -479,6 +479,7 @@ rules:
 - "RULE-SET,Emby,🎥 Emby"
 - "RULE-SET,Paypal,💴 Paypal"
 - "RULE-SET,F1TV,📺 F1TV"
+- "RULE-SET,F1TV1,📺 F1TV"
 - "RULE-SET,ViuTV,🎦 ViuTV"
 - "GEOSITE,spotify,🎻 Spotify"
 - "GEOSITE,bahamut,📺 Bahamut"
@@ -554,6 +555,14 @@ rule-providers:
     url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/F1.list"
     proxy: "📺 F1TV"
 
+  F1TV1:
+    behavior: classical
+    interval: 10800
+    path: ./rule_provider/F1.list
+    type: http
+    url: "https://raw.githubusercontent.com/N0rway/rules/refs/heads/main/F1.list"
+    proxy: "📺 F1TV"
+  
   ViuTV:
     behavior: classical
     interval: 10800
