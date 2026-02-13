@@ -552,7 +552,7 @@ rule-providers:
     interval: 10800
     path: ./rule_provider/F1.list
     type: http
-    url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/F1.list"
+    url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/F1.yaml"
     proxy: "📺 F1TV"
 
   F1TV1:
