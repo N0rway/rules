@@ -552,7 +552,7 @@ rule-providers:
     interval: 10800
     path: ./rule_provider/F1.list
     type: http
-    url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/F1.yaml"
+    url: "https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/F1.list"
     proxy: "📺 F1TV"
 
   F1TV1:
@@ -560,7 +560,7 @@ rule-providers:
     interval: 10800
     path: ./rule_provider/F11.list
     type: http
-    url: "https://raw.githubusercontent.com/N0rway/rules/refs/heads/main/F1.list"
+    url: "https://raw.githubusercontent.com/N0rway/rules/refs/heads/main/F1.yaml"
     proxy: "📺 F1TV"
   
   ViuTV:
