@@ -566,7 +566,7 @@ rule-providers:
     interval: 10800
     path: ./rule_provider/F11.list
     type: http
-    url: "https://raw.githubusercontent.com/N0rway/rules/refs/heads/main/F1.list"
+    url: "https://raw.githubusercontent.com/N0rway/rules/refs/heads/main/F1.yaml"
     proxy: "📺 F1TV"
     
   ViuTV:
