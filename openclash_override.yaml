@@ -455,7 +455,6 @@ rules:
 - "GEOSITE,google-cn,🎯 全球直连"
 - "GEOSITE,category-games@cn,🎯 全球直连"
 - "RULE-SET,Steam_CDN,🎯 全球直连"
-- "GEOSITE,category-game-platforms-download,🎯 全球直连"
 - "GEOSITE,category-public-tracker,🎯 全球直连"
 - "GEOSITE,category-communication,💬 国外通讯"
 - "GEOSITE,category-social-media-!cn,💬 国外通讯"
